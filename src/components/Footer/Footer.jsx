@@ -12,7 +12,7 @@ const Footer = () => {
           <Socials />
         </div>
       </div>
-      <Navbar />
+      <Navbar id='secondary-nav' ariaLabel='secondary' />
       <div className='footer-third-part'>
         <Button />
         <p className='footer-copyright'>© Easybank. All Rights Reserved</p>

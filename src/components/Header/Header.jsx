@@ -6,16 +6,15 @@ import Button from '../Button/Button';
 
 const Header = ({ isMenuOpen, toggleMenu }) => {
   const desktopView = useMediaQuery({ minWidth: 920 });
-
   return (
     <header className='header'>
       <Logo />
-      <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+      <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label='menu'>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </div>
-      <Navbar isMenuOpen={isMenuOpen} />
+      <Navbar id='primary-nav' isMenuOpen={isMenuOpen} ariaLabel={isMenuOpen ? 'primary-mobile' : 'primary'} />
       {desktopView ? <Button /> : null}
     </header>
   );

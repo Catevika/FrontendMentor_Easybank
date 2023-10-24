@@ -11,10 +11,10 @@ const Home = ({ isMenuOpen }) => {
   const desktopView = useMediaQuery({ minWidth: 920 });
 
   return (
-    <>
+    <main>
       <section className='section-container'>
         <div className='section-text-content'>
-          <h1 className='section-title'>Next generation digital banking</h1>
+          <h2 className='section-title'>Next generation digital banking</h2>
           <p className='section-text'>Take your financial life online. Your Easybank account will be a one-stop-shop;
             for spending, saving, budgeting, investing, and much more.</p>
           <Button />
@@ -27,7 +27,7 @@ const Home = ({ isMenuOpen }) => {
       </section>
       <section className='section-container'>
         <div className='section-text-content'>
-          <h2 className='section-subtitle'>Why choose Easybank?</h2>
+          <h3 className='section-subtitle'>Why choose Easybank?</h3>
           <p className='section-text'>We leverage Open Banking to turn your bank account into your financial hub. Control
             your finances like never before.</p>
           <Reasons />
@@ -35,11 +35,11 @@ const Home = ({ isMenuOpen }) => {
       </section>
       <section className='section-container'>
         <div className='section-text-content'>
-          <h2 className='section-subtitle'>Latest Articles</h2>
+          <h3 className='section-subtitle'>Latest Articles</h3>
           <Articles />
         </div>
       </section>
-    </>
+    </main>
   );
 };
 

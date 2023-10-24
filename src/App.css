@@ -18,12 +18,27 @@
 }
 
 /*----------  Logo  ----------*/
+.lineargradient {
+  height: 0;
+}
+
 .header .logo path:not('linearGradient') {
   fill: var(--dark-blue);
 }
 
+.sr-only {
+  display: none;
+}
+
 .logo {
   margin-left: var(--margin-xxl);
+}
+
+.logo+span {
+  font-size: 1.25rem;
+  margin-left: var(--margin-xxxl);
+  margin-top: -30px;
+  display: block;
 }
 
 /*----------  Hamburger  ----------*/
@@ -56,7 +71,7 @@
 
 .nav-item:hover,
 .nav-item.active {
-  padding-block: 30px 28px;
+  padding-block: 32px 28px;
   font-weight: var(--fw-bold);
   border-bottom: 4px solid var(--lime-green);
 }
@@ -271,6 +286,12 @@
   margin-block: var(--margin-m);
 }
 
+.footer .logo+span {
+  margin-top: -65px;
+  margin-bottom: var(--margin-m);
+  color: var(--white);
+}
+
 .footer .nav-items {
   font-size: 0.8rem;
   display: grid;
@@ -402,6 +423,10 @@
   .logo {
     margin-left: 0;
     padding-left: var(--padding-xl);
+  }
+
+  .logo+span {
+    margin-left: var(--margin-l);
   }
 
   /*---------- Hamburger - Mobile devices ----------*/
@@ -618,8 +643,8 @@
     padding-left: 0;
   }
 
-  .footer .logo path:not('linearGradient') {
-    fill: var(--white);
+  .footer .logo+span {
+    margin-left: var(--margin-m);
   }
 
   .footer .nav-items {

@@ -1,11 +1,13 @@
 
 const Privacy = () => {
   return (
-    <section className='section-container other-page'>
-      <div className='section-text-content'>
-        <h2 className='section-subtitle'>Privacy</h2>
-      </div>
-    </section>
+    <main>
+      <section className='section-container other-page'>
+        <div className='section-text-content'>
+          <h3 className='section-subtitle'>Privacy</h3>
+        </div>
+      </section>
+    </main>
   );
 };
 
