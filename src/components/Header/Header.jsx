@@ -1,6 +1,6 @@
 import Logo from '../Logo/Logo';
 import PropTypes from 'prop-types';
-import Navbar from '../NavBar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import { useMediaQuery } from 'react-responsive';
 import Button from '../Button/Button';
 
