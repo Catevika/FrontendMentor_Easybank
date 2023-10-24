@@ -1,6 +1,6 @@
 import Logo from '../Logo/Logo';
 import Socials from '../Socials/Socials';
-import Navbar from '../NavBar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import Button from '../Button/Button';
 
 const Footer = () => {
