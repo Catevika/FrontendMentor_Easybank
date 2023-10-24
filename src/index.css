@@ -1,0 +1,142 @@
+:root {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors */
+  --dark-blue: rgb(45, 49, 77);
+  --dark-green: hsl(161, 62%, 45%);
+  --medium-green: hsl(161, 62%, 48%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: rgb(43, 183, 218);
+
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* fonts  */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  /* margins */
+  --margin-xxxs: 0.2rem;
+  --margin-xxs: 0.6rem;
+  --margin-xs: 1rem;
+  --margin-s: 1.5rem;
+  --margin-m: 2rem;
+  --margin-l: 4rem;
+  --margin-xl: 5rem;
+  --margin-xxl: 6rem;
+  --margin-xxxl: 8rem;
+
+  /* paddings */
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-l: 1.5rem;
+  --padding-xl: 2rem;
+  --padding-xxl: 4rem;
+  --padding-xxxl: 6rem;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: var(--dark-blue);
+  background-color: var(--light-grayish-blue);
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide the scrollbar on WebKit-based browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  font-weight: var(--fw-bold);
+}
+
+a:focus-visible {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+}
+
+button {
+  font-size: 0.8rem;
+  font-family: inherit;
+  font-weight: var(--fw-bold);
+  padding: 0.8em 1.6em;
+  color: var(--white);
+  background: rgb(49, 211, 92);
+  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 90%);
+  border-radius: 20px;
+  border: none;
+  opacity: 1;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
