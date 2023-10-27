@@ -9,7 +9,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
   return (
     <header className='header'>
       <Logo />
-      <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label='menu'>
+      <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
