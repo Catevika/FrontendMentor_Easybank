@@ -22,7 +22,7 @@
   height: 0;
 }
 
-.header .logo path:not('linearGradient') {
+.header .logo {
   fill: var(--dark-blue);
 }
 
